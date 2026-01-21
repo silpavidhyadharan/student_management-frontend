@@ -22,15 +22,15 @@ function Topnavbar() {
 export default Topnavbar
 const style = {
 
-    heading : {
-    fontSize:"35px",
-    fontFamily:"fantacy",
-    textShadow:"2px 1px 5px white"
+  heading: {
+    fontSize: "35px",
+    fontFamily: "fantacy",
+    textShadow: "2px 1px 5px white"
   },
-  content : {
-    paddingLeft:"720px",
-    fontSize:"18px",
-    fontWeight:"bold",
-    fontFamily:"fantacy"
+  content: {
+    paddingLeft: "720px",
+    fontSize: "18px",
+    fontWeight: "bold",
+    fontFamily: "fantacy"
   }
 }
