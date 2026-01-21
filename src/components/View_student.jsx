@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import bg from '../assets/images/background2.jpg'
 import Table from 'react-bootstrap/Table';
+import { get_all_students } from '../Services/api';
 
 
 function View_student() {
+
+  const[students,setStudents] = useState
+
   return (
     <div style={{
                 backgroundImage:`url(${bg})`,
