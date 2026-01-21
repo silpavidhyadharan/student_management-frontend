@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import bg from '../assets/images/background2.jpg'
 import Table from 'react-bootstrap/Table';
 import { get_all_students } from '../Services/api';
@@ -6,8 +6,17 @@ import { get_all_students } from '../Services/api';
 
 function View_student() {
 
-  const[students,setStudents] = useState
+  const[students,setStudents] = useState()
 
+  async function display_students() {
+    let result = await get_all_students()
+    console.log(result)
+    
+  } 
+
+  useEffect(()=>{
+    display_students()
+  })
   return (
     <div style={{
                 backgroundImage:`url(${bg})`,
